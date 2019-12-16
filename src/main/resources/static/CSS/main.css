@@ -36,18 +36,22 @@ body {
 .error {
     color: red;
     text-decoration: underline;
+    top: 0;
+    font-weight: bold;
 }
 
 .btn {
     background-color: white;
     color: black;
     border: 2px solid #3b5998;
+    float: right;
 }
 
 .btn1 {
     background-color: white;
     color: black;
     border: 2px solid #3b5998;
+
 
 }
 
@@ -57,14 +61,73 @@ footer {
     text-align: center;
     font-size: 0.8em;
 }
-.productnaam{
-    font-size: 2em;
-    font-weight: bold;
+
+.productnaam {
+    font-size: 300%;
+    border-bottom: 2px solid #888;
+    margin-bottom: 20px;
 }
-.aangeboden{
-    text-decoration: underline;
-    font-size: 1.5em;
+
+.aangeboden {
+    border-right: 1px solid #eee;
+    white-space: nowrap;
+    padding: 20px;
+    padding-right: 30px;
+    font-size: 0.8em;
+    border-top: 1px solid rgb(217, 217, 217);
+    font-family: Roboto, sans-serif !important;
 }
-.prijs{
+
+.prijs {
+    outline: 0px solid transparent;
+    border: 0px solid transparent;
     font-weight: bolder;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: #f2f2f2 !important;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+#producttable tr:nth-child(even) {
+    background-color: #f2f2f2 !important;
 }

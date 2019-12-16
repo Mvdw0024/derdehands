@@ -30,8 +30,9 @@ public class ProductController {
 
 
     }
-    @RequestMapping(value = {"/about"},method = RequestMethod.GET)
-    public String showAbout(){
+
+    @RequestMapping(value = {"/about"}, method = RequestMethod.GET)
+    public String showAbout() {
         return "about";
     }
 
