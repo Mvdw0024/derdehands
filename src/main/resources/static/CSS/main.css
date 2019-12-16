@@ -1,0 +1,70 @@
+#navmenu {
+    background: linear-gradient(to right, #3b5998, lightblue);
+    background: -moz-linear-gradient(to right, #3b5998, lightblue);
+    background: -webkit-linear-gradient(to right, #3b5998, lightblue);
+    font-weight: bolder;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#navmenu ul {
+    list-style: none;
+    padding: 5px;
+
+}
+
+#navmenu ul li {
+    display: inline-block;
+}
+
+#navmenu ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body {
+    padding: auto;
+    margin-top: 80px !important;
+}
+
+.error {
+    color: red;
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #3b5998;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3b5998;
+
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+.productnaam{
+    font-size: 2em;
+    font-weight: bold;
+}
+.aangeboden{
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+.prijs{
+    font-weight: bolder;
+}

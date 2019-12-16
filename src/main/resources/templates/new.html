@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta name="viewport" content="width=device-width initial-scale=1,shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <nav th:replace="~{menu::navmenu(new)}"></nav>
+
+    <link rel="stylesheet" th:href="@{~/CSS/main.css}">
+
+    <title>Derdehands: Nieuwe aanbieding</title>
+</head>
+<body>
+
+<form method="post" th:action="@{~/new}" th:object="${nProduct}">
+    <h1>Nieuwe aanbieding</h1>
+    <div>
+        <br>
+        <label>Wat wil je graag aanbieden?</label>
+        <br>
+        <textarea row="20" cols="80" th:field="*{omschrijving}" placeholder="e.g. this is an apple"></textarea>
+        <br>
+        <span th:if="${#fields.hasErrors('omschrijving')}" th:errors="*{omschrijving}" class="error"></span>
+        <br>
+        <div>
+            <label>Productnaam?</label>
+
+            <label th:text="*{productnaam}"></label>
+            <input th:field="*{productnaam}" type="text" placeholder="e.g. AppelenEenEi"/>
+            <span th:if="${#fields.hasErrors()}" th:errors="*{productnaam}" class="error"></span>
+            <br>
+            <label>Prijs?</label>
+            <input th:field="*{initprijs}" type="text" placeholder="e.g. 1 euro 50"/>
+            <span th:if="${#fields.hasErrors()}" th:errors="*{initprijs}" class="error"></span>
+            <br>
+            <label>Naam:</label>
+            <input th:field="*{gebruikersnaam}" type="text" placeholder="e.g. JoskeVermeulen12"/>
+            <span th:if="${#fields.hasErrors()}" th:errors="*{gebruikersnaam}" class="error"></span>
+            <br>
+            <label>E-mail:</label>
+            <input th:field="*{email}" type="text" placeholder="e.g. info@derdehands.be"/>
+            <span th:if="${#fields.hasErrors()}" th:errors="*{email}" class="error"></span>
+            <br>
+
+            <div>
+                <br>
+                <input class="btn" value="Bied aan" type="submit"></input>
+            </div>
+
+        </div>
+
+    </div>
+</form>
+
+
+</body>
+<footer>
+    <p>Made by Michael Van de Wouwer ©</p>
+</footer>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{~/CSS/main.css}">
+    <title>Derdehands.be</title>
+</head>
+
+<nav th:fragment="navmenu(page)" id="navmenu">
+    <ul>
+        <li><a th:href="@{~/index}">Aanbiedingen</a></li>
+        <li><a th:href="@{~/new}">New</a></li>
+        <li><a th:href="@{~/about}">About</a></li>
+
+
+    </ul>
+</nav>
+</html>

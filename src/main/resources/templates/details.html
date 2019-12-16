@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{~/CSS/main.css}">
+    <nav th:replace="~{menu::navmenu(details)}"></nav>
+    <title>Derdehands: Details</title>
+
+</head>
+
+
+<body>
+<br>
+<br>
+<br>
+<article>
+    <p class="prijs" th:text="|${product.initprijs} euro|"></p>
+    <p class="productnaam" th:text="${product.productnaam}"></p>
+    <p class="product" th:text="${product.omschrijving}"></p>
+    <p class="aangeboden" th:text="|Aangeboden door ${product.gebruikersnaam} |"></p>
+
+
+</article>
+<button><a class="mail" th:href="'mailto:'+${product.email}">Aanbieder contacteren</a></button>
+
+</body>
+<footer>
+    <p>Made by Michael Van de Wouwer ©</p>
+</footer>
+</html>
